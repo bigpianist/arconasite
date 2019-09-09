@@ -1,0 +1,48 @@
+/*!
+ * Start Bootstrap - Freelancer v5.1.2 (https://startbootstrap.com/template-overviews/freelancer)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.text-gray {
+  color: #B4B4B4 !important;
+}
+
+.bg-primary {
+  background-color: #57BF69 !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #148f77 !important;
+}
+
+.bg-secondary {
+  background-color: #2c3e50 !important;
+}
+
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #1a252f !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+
+  @font-face {
+font-family: "CustomFont";
+src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+}
+}
+
