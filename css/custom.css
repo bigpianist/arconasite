@@ -46,3 +46,6 @@ url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
 }
 }
 
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #57BF69;
+}
