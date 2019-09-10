@@ -10,6 +10,19 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+.btn-primary {
+  color: #fff;
+  background-color: #57BF69;
+  border-color: #57BF69;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
 .text-gray {
   color: #B4B4B4 !important;
 }
