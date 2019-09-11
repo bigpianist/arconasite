@@ -11,6 +11,75 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ #mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+}
+
+#mainNav .navbar-brand {
+  color: #fff;
+}
+
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #B4B4B4;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #57BF69;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #B4B4B4;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #B4B4B4;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+    background: #1abc9c;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #1abc9c;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+
 .btn-primary {
   color: #fff;
   background-color: #57BF69;
@@ -56,15 +125,5 @@ src: url("https://yoursite.com/css/fonts/CustomFont.eot");
 src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
 url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
 url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
-}
-
-.navbar-nav li.nav-item a.nav-link:hover {
-  color: #57BF69;
-  background-color: #57BF69;
-}
-
-.navbar-nav li.nav-item a.nav-link.active {
-  color: #57BF69;
-  background-color: #57BF69;
 }
 }
