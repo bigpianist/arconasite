@@ -64,11 +64,11 @@
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #B4B4B4;
-    background: #57BF69;
+    background: #28a745;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #B4B4B4;
-    background: #57BF69;
+    background: #28a745;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
