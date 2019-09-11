@@ -92,6 +92,16 @@
   border-color: #28a745;
 }
 
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #57BF69;
+  opacity: 1;
+}
 
 .text-primary {
   color: #57BF69 !important;
