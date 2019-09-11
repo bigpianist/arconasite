@@ -35,11 +35,11 @@
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #B4B4B4;
+  color: #2c3e50;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #B4B4B4;
+  color: #2c3e50;
 }
 
 #mainNav .navbar-toggler {
