@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-#mainNav {
+ #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -35,11 +35,11 @@
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #2c3e50;
+  color: #B4B4B4;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #2c3e50;
+  color: #B4B4B4;
 }
 
 #mainNav .navbar-toggler {
@@ -64,11 +64,11 @@
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #2c3e50;
-    background: #28a745;
+    background: #57BF69;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #2c3e50;
-    background: #28a745;
+    background: #57BF69;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
