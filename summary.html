@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Arcona - Executive Summary</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <img class="navbar-brand js-scroll-trigger" href="#page-top" src="img/logo_arcona_horiz_lrg_lightgray.png" alt="" width="322" height="80">
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aiengine">AI Engine</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#legal">Legal</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-alternate text-black text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-heading mb-5" src="img/logo-arcona_medsmall.png" alt="">
+    
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Arcona is a Venture Studio for AI and Creativity. 
+        <br>We rapidly prototype and deliver creative products <br>leveraging our custom AI Music Engine.</p>
+
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section" id="aiengine">
+      <h2 class="page-section-heading text-center text-uppercase text-black">Our AI Music Engine</h2>
+      <br><p class="text-black text-center" style="font-size:20px">We provide a realtime AI composer that can adapt to emotional cues, work from existing music and compose music in multiple styles.</p>
+      <br> 
+      <h3 class="text-center text-uppercase text-black">Styles</h3>
+      <p class="text-black text-center" style="font-size:20px">The engine can generate music in over 16 different sub-genres. We group the sub-genres <br>into larger musical styles, which consist of the following.</p>
+      <h5 class="text-center text-uppercase text-black">Ambient</h5>
+      <p class="text-black text-center" style="font-size:20px">Our ambient style is designed for functional music to accompany content or activities, <br>such as open-world games, relaxation, or meditation. It contains multiple sub-genres, <br> including Electro Ambient, Cinematic Ambient, and Dreamy Ambient</p>
+      
+      <div id="demo">
+          <div id="waveformAmbient">
+              <!-- Here be the waveform -->
+          </div>
+
+          <div class="controls text-center">
+              <button class="btn btn-primary" data-action="play">
+                  <i class="glyphicon glyphicon-play"></i>
+                  Play
+                  /
+                  <i class="glyphicon glyphicon-pause"></i>
+                  Pause
+              </button>
+          </div>
+      </div>
+
+      <script type="text/javascript">
+        
+        var wavesurfer1 = WaveSurfer.create({
+            container: '#waveformAmbient',
+            waveColor: 'green',
+            progressColor: 'gray'
+        });
+        wavesurfer1.load('https://bigpianist.github.io/arconaexecutivesummary/emotions3.wav');
+        // toggle play button
+        document
+        .querySelector('[data-action="play"]')
+        .addEventListener('click', wavesurfer1.playPause.bind(wavesurfer1));
+      </script>
+
+      <h5 class="text-center text-uppercase text-black">House</h5>
+      <p class="text-black text-center" style="font-size:20px">Our House music style is designed as a contemporary dance style, <br> and is the style closest to popular music. It contains multiple sub-genres, <br> including Electro House, Funky House, Dreamy House, and Minimal House<br><br>An example of Funky House in the Happy emotion:</p>
+      
+      <div>
+          <div id="waveformHouse">
+              <!-- Here be the waveform -->
+          </div>
+
+          <div class="controls text-center">
+              <button class="btn btn-primary" data-action="play">
+                  <i class="glyphicon glyphicon-play"></i>
+                  Play
+                  /
+                  <i class="glyphicon glyphicon-pause"></i>
+                  Pause
+              </button>
+          </div>
+      </div>
+
+      <script type="text/javascript">
+        
+        var wavesurfer2 = WaveSurfer.create({
+            container: '#waveformHouse',
+            waveColor: 'green',
+            progressColor: 'gray'
+        });
+        wavesurfer2.load('https://bigpianist.github.io/arconaexecutivesummary/emotions3.wav');
+        // toggle play button
+        document
+        .querySelector('[data-action="play"]')
+        .addEventListener('click', wavesurfer2.playPause.bind(wavesurfer2));
+      </script>
+    <div class="row">
+     
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="team">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About Us</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-6 ml-auto">
+          <center>
+          <img class="grey_scale" src="img/AmelieAnglade-circle.png" alt="" width="350">
+          <br>
+          <br>
+          </center>
+          <p class="lead">Amélie Anglade is a specialist in Music Information Retrieval–the application of AI to music. Her interests and background are in Music identification, recommendation and discovery.</p>
+          <br>
+        </div>
+        <div class="col-lg-6 mr-auto">
+          <center>
+          <img class="grey_scale" src="img/RyanGroves-circle.png" alt="" width="350">
+          <br>
+          <br>
+          </center>
+          <p class="lead">Ryan Groves is a composer, music theorist, and AI Music expert, in addition to being a curator and creator in the XR (Virtual/Augmented/Mixed Realities) space.</p>
+          <br>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <form accept-charset="UTF-8" action="https://usebasin.com/f/6ee0213f7e51" enctype="multipart/form-data" method="POST">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Name</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Email Address</label>
+                <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Message</label>
+                <textarea class="form-control" id="message" name="comment" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Berlin, Germany
+            <br>and 
+            <br>Remote work</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-dribbble"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">This Website</h4>
+          <p class="lead mb-0">Uses Freelance, a free to use, open source theme from <a href="http://startbootstrap.com" class="text-primary">Start Bootstrap</a>, adapted with our own color scheme.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Arcona 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As First MIR Engineer</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/SoundCloud_explorePage.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Research, prototyping and implementation of Search engines, Recommendation Systems and Machine Learning algorithms for Music Discovery. Also worked on signal processing and audio fingerprinting as well as Women in Tech outreach programmes.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Amélie Anglade
+                        </strong>
+                    <li>Employer:
+                        <strong><a href="https://soundcloud.com/" class="text-primary">SoundCloud</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>July 2011 - August 2013
+                        </strong>    
+                    </li>
+                    <li>Domain:
+                        <strong>Music Information Retrieval, IR and Machine Learning
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Watch:
+                        <strong><a href="https://www.youtube.com/watch?v=AHUUppXcP_g" class="text-primary">DiscoRank presentation at the Realtime Conf 2013</a>
+                        </strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Senior Engineer</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/frestyl_app.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">In charge of building recommendation/personalisation features as well as the entire web backend development. Leading the developer team, onboarding, training and supervising programmers across the entire stack.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Amélie Anglade
+                        </strong>
+                    <li>Employer:
+                        <strong>frestyl</strong>
+                    </li>
+                    <li>Date:
+                        <strong>September 2013 - June 2014
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>RecSys and Web Development
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Watch:
+                        <strong><a href="https://itunes.apple.com/us/podcast/id865626884" class="text-primary">frestyl panel at the Berlin Apple Store</a>
+                        </strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Graduate Student Researcher</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/Philips_logo.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Research and implementation of clustering techniques to create and maintain user communities that share specific music tastes in order to build P2P radio channels.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Amélie Anglade
+                        </strong>
+                    <li>Affiliation:
+                        <strong><a href="http://www.research.philips.com/" class="text-primary">Philips Research</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>August 2006 - January 2007
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>RecSys, Complex Network Theory, Clustering Algorithms, P2P
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Read:
+                        <strong><a href="https://www.researchgate.net/publication/221141046_Complex-network_theoretic_clustering_for_identifying_groups_of_similar_listeners_in_p2p_systems" class="text-primary">Publication at RecSys 2007</a></strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Principal Data Scientist</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/Bertha_app.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Performed product-focused Data Science tasks for the mobile application Bertha, and surrounding services. Took care of the entire Data Science stack: designing, prototyping, testing and scaling Data Science algorithms, including Big Data Engineerings tasks. Collaborated with backend engineers, dev ops, designers and product owners to fully integrate Data Science into their code, work and processes while applying an agile methodology to the Data Science processes as well, including quick iterations and bi-weekly demos of data science results. Trained colleagues, supervised working students, recruited and onboarded data scientists.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Amélie Anglade
+                        </strong>
+                    <li>Where:
+                        <strong>Mobile services team within <a href="https://www.mercedes-benz.io/" class="text-primary">Mercedes-Benz.io</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>February 2017 - September 2018
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>Data Science, Time Series Analysis, Predictive Modelling
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Check out:
+                        <strong><a href="https://www.bertha.app/" class="text-primary">The Bertha App</a></strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Postgraduate Researcher</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/QueenMary_logo.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">PhD candidate, affiliated with the Centre for Digital Music and the OMRAS2 project (large UK project funded by the Engineering and Physic Sciences Research Council). Conducted research and development on knowledge representation of musical harmony and modelling of genre, composer and musical style using Machine Learning techniques and Logic Programming.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Amélie Anglade
+                        </strong>
+                    <li>Affiliation:
+                        <strong><a href="http://c4dm.eecs.qmul.ac.uk/" class="text-primary">Centre for Digital Music, Queen Mary University of London</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>April 2007 - June 2011
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>Research, MIR, harmony, Automatic Genre Classification, Inductive Logic Programming
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Read:
+                        <strong><a href="https://www.researchgate.net/publication/264754764_Logic-based_Modelling_of_Musical_Harmony_for_Automatic_Characterisation_and_Classification" class="text-primary">PhD thesis</a>
+                        </strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Co-founder and Chief Product Officer</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/melodriveOceania.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Think of Melodrive as as a virtual composer sitting inside a digital world. The composer listens to the events happening in an experience and creates music that matches them. On the fly.
+                </p>
+                <p>
+                For example, when a player gets a hit from an enemy the music can respond by being emotionally more angry or dramatic. This real-time generation process is possible thanks to advancements in AI techniques, patented by Melodrive, which enable flexible change to the music to suit any emotional setting.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Ryan Groves
+                        </strong>
+                    <li>Affiliation:
+                        <strong><a href="http://melodrive.com/" class="text-primary">Melodrive</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>Oct 2016 - Feb 2019
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>R&D, Fundraising, Product Management, Planning, Automatic Composition
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Watch:
+                        <strong><a href="https://www.youtube.com/watch?v=AIbR-s_Rkvs" class="text-primary">AI Composition Plug-in</a>
+                        </strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 7 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Music Algorithms Developer</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/ZyaLogoLarge.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Zya enables anyone with a PC, literally, to easily create high-quality music. People can start creating a song in any genre by using their own voice to hum a beat or baseline. They can also tap or touch to create the beat. After inputing their own music, users can mix in hooks, some of which are from hit songs. At launch Zya has Lady Gaga's "Poker Face" and "Just Dance," as well as pop hits like "Like a Virgin," "Born to Be Wild" and "Bye Bye Bye." Zya's technology then adjusts the various parts of the song to make them fit together.</p>
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Ryan Groves
+                        </strong>
+                    <li>Affiliation:
+                        <strong><a href="http://zyamusic.com/" class="text-primary">Music Mastermind (now Zya)</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>May 2010 - June 2012
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>R&D, Vocal Transcription, Automatic Key Detection, Automatic Accompaniment
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Watch:
+                        <strong><a href="https://www.youtube.com/watch?v=aTsIfxDWNR8" class="text-primary">Assisted Composition App Demo</a>
+                        </strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 9 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">As Director Of Research and Development</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/DittyApp.jpg" alt="">
+                <div>
+                  <img class="img-fluid rounded mb-5" src="img/BestAppAward.jpg" alt="" width="324" height="251">
+                  <img class="img-fluid rounded mb-5" src="img/BestMusicApp2.png" alt="" width="324" height="285">
+                </div>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">
+                  Ditty is an automated musical messenger. You text. Ditty sings! Make every message a hit.
+                </p>
+                <p>
+                  #1 Music App in 25 countries
+                </p>
+                <p>
+                  2015 Music App of the Year! – Silicon Beach Award
+                </p>
+                <p>
+                  2015 Music App of the Year! -Appy Awards
+                </p>
+                <p>
+                  Top Ten “Apps of the Year”- Apple ‘n’ Apps
+                </p>
+                
+
+                <ul class="list-inline item-details">
+                    <li>Who:
+                        <strong>Ryan Groves
+                        </strong>
+                    <li>Affiliation:
+                        <strong><a href="http://zyamusic.com/" class="text-primary">Zya</a>
+                        </strong>
+                    </li>
+                    <li>Date:
+                        <strong>Aug 2014 - July 2015
+                        </strong>
+                    </li>
+                    <li>Domain:
+                        <strong>R&D, Text-to-Melody Alignment, Melodic Embellishment, Melodic Phrase Detection, Audio Streaming
+                        </strong>
+                    </li>
+                    <br><br>
+                    <li>Watch:
+                        <strong><a href="https://www.youtube.com/watch?v=dDe2nTgRv5Y" class="text-primary">Ditty Trailer</a>
+                        </strong>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>

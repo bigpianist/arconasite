@@ -248,6 +248,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: inherit !important;
 }
 
+.bg-alternate { 
+ background-color: #E4E4E4 !important; 
+}
+
+.text-black {
+  color: #040404 !important;
+}
 
 .text-gray {
   color: #B4B4B4 !important;
