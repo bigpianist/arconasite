@@ -72,7 +72,7 @@
       <h3 class="text-center text-uppercase text-black">Styles</h3>
       <p class="text-black text-center" style="font-size:20px">The engine can generate music in over 16 different sub-genres. We group the sub-genres <br>into larger musical styles, which consist of the following.</p>
       <h5 class="text-center text-uppercase text-black">Ambient</h5>
-      <p class="text-black text-center" style="font-size:20px">Our ambient style is designed for functional music to accompany content or activities, <br>such as open-world games, relaxation, or meditation. It contains multiple sub-genres, <br> including Electro Ambient, Cinematic Ambient, and Dreamy Ambient</p>
+      <p class="text-black text-center" style="font-size:20px">Our ambient style is designed for functional music to accompany content or activities, <br>such as open-world games, relaxation, or meditation. It contains multiple sub-genres, <br> including Electro Ambient, Cinematic Ambient, and Dreamy Ambient.<br><br>An example of Electro Ambient in the Happy emotion:</p>
       
       <div id="demo">
           <div id="waveformAmbient">
@@ -97,13 +97,15 @@
             waveColor: 'green',
             progressColor: 'gray'
         });
-        wavesurfer1.load('https://bigpianist.github.io/arconaexecutivesummary/emotions3.wav');
+        wavesurfer1.load('https://bigpianist.github.io/arconasite/audio/ElectroAmbient_Happy.wav');
         // toggle play button
         document
         .querySelector('[data-action="play"]')
         .addEventListener('click', wavesurfer1.playPause.bind(wavesurfer1));
       </script>
-
+      <br/>
+      <br/>
+      <br/>
       <h5 class="text-center text-uppercase text-black">House</h5>
       <p class="text-black text-center" style="font-size:20px">Our House music style is designed as a contemporary dance style, <br> and is the style closest to popular music. It contains multiple sub-genres, <br> including Electro House, Funky House, Dreamy House, and Minimal House<br><br>An example of Funky House in the Happy emotion:</p>
       
@@ -135,6 +137,76 @@
         document
         .querySelector('[data-action="play"]')
         .addEventListener('click', wavesurfer2.playPause.bind(wavesurfer2));
+      </script>
+      <br/>
+      <br/>
+      <br/>
+      <h5 class="text-center text-uppercase text-black">Piano</h5>
+      <p class="text-black text-center" style="font-size:20px">The AI engine doesn't only allow for electronic styles. <br> Our Piano style demonstrates this, as it is a simple style with only piano. <br> The style has sub-genres of Dreamy Piano, Dancey Piano, and Cinematic Piano <br><br>An example of Dancey Piano in the Happy emotion:</p>
+      
+      <div>
+          <div id="waveformPiano">
+              <!-- Here be the waveform -->
+          </div>
+
+          <div class="controls text-center">
+              <button class="btn btn-primary" data-action="play">
+                  <i class="glyphicon glyphicon-play"></i>
+                  Play
+                  /
+                  <i class="glyphicon glyphicon-pause"></i>
+                  Pause
+              </button>
+          </div>
+      </div>
+
+      <script type="text/javascript">
+        
+        var wavesurfer3 = WaveSurfer.create({
+            container: '#waveformPiano',
+            waveColor: 'green',
+            progressColor: 'gray'
+        });
+        wavesurfer3.load('https://bigpianist.github.io/arconaexecutivesummary/emotions3.wav');
+        // toggle play button
+        document
+        .querySelector('[data-action="play"]')
+        .addEventListener('click', wavesurfer3.playPause.bind(wavesurfer2));
+      </script>
+      <br/>
+      <br/>
+      <br/>
+      <h5 class="text-center text-uppercase text-black">Rock</h5>
+      <p class="text-black text-center" style="font-size:20px">Another example of a more analog style is our Rock style. <br> This style has sub-genres of Classic Rock, Piano Rock, Epic Rock and Electro Rock <br><br>An example of Epic Rock in the Happy emotion:</p>
+      
+      <div>
+          <div id="waveformRock">
+              <!-- Here be the waveform -->
+          </div>
+
+          <div class="controls text-center">
+              <button class="btn btn-primary" data-action="play">
+                  <i class="glyphicon glyphicon-play"></i>
+                  Play
+                  /
+                  <i class="glyphicon glyphicon-pause"></i>
+                  Pause
+              </button>
+          </div>
+      </div>
+
+      <script type="text/javascript">
+        
+        var wavesurfer4 = WaveSurfer.create({
+            container: '#waveformRock',
+            waveColor: 'green',
+            progressColor: 'gray'
+        });
+        wavesurfer4.load('https://bigpianist.github.io/arconasite/audio/ElectroAmbient_Happy.wav');
+        // toggle play button
+        document
+        .querySelector('[data-action="play"]')
+        .addEventListener('click', wavesurfer4.playPause.bind(wavesurfer2));
       </script>
     <div class="row">
      
